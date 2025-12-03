@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Biblioteca</title>
+    <title> Biblioteca-Rivadeneyra</title>
     <!-- Enlazar el CSS separado -->
     <link rel="stylesheet" href="estilos.css">
 </head>
