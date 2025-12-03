@@ -18,18 +18,18 @@ if (isset($_GET['id'])) {
         
         if ($conexion->query($sql_eliminar) === TRUE) {
             echo "<script>
-                    alert('✅ Libro \"$titulo\" eliminado correctamente');
+                    alert('Libro \"$titulo\" eliminado correctamente');
                     window.location.href = 'listar_libros.php';
                   </script>";
         } else {
             echo "<script>
-                    alert('❌ Error al eliminar: " . $conexion->error . "');
+                    alert('Error al eliminar: " . $conexion->error . "');
                     window.location.href = 'listar_libros.php';
                   </script>";
         }
     } else {
         echo "<script>
-                alert('❌ Libro no encontrado');
+                alert('Libro no encontrado');
                 window.location.href = 'listar_libros.php';
               </script>";
     }
