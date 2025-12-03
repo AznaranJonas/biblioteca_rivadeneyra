@@ -76,7 +76,7 @@ $libro = $resultado->fetch_assoc();
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="form_libros.php">Agregar libro</a></li>
                 <li><a href="listar_libros.php">Ver libros</a></li>
-                <li><a href="form_prestamos.php">Préstamos</a></li>
+
             </ul>
         </nav>
         

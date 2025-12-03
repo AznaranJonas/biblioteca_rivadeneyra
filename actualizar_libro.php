@@ -24,10 +24,10 @@ $sql = "UPDATE libros SET
 
 // Ejecutar y verificar
 if ($conexion->query($sql) === TRUE) {
-    $mensaje = "✅ Libro actualizado correctamente";
+    $mensaje = "Libro actualizado correctamente";
     $tipo_mensaje = "exito";
 } else {
-    $mensaje = "❌ Error al actualizar: " . $conexion->error;
+    $mensaje = "Error al actualizar: " . $conexion->error;
     $tipo_mensaje = "error";
 }
 
@@ -86,16 +86,16 @@ $conexion->close();
     <div class="container">
         <!-- Encabezado -->
         <header>
-            <h1>📖 Actualización de Libro</h1>
+            <h1>Actualización de Libro</h1>
             <p class="subtitle">Resultado de la operación</p>
         </header>
         
         <!-- Menú de navegación -->
         <nav class="menu">
             <ul>
-                <li><a href="index.php">🏠 Inicio</a></li>
-                <li><a href="listar_libros.php">📋 Ver libros</a></li>
-                <li><a href="form_libros.php">➕ Agregar libro</a></li>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="listar_libros.php">Ver libros</a></li>
+                <li><a href="form_libros.php">Agregar libro</a></li>
             </ul>
         </nav>
         
@@ -103,14 +103,14 @@ $conexion->close();
         <main class="contenido-principal">
             <div class="resultado-actualizacion <?php echo $tipo_mensaje; ?>">
                 <div class="icono-grande">
-                    <?php echo ($tipo_mensaje == 'exito') ? '✅' : '❌'; ?>
+                    <?php echo ($tipo_mensaje == 'exito') ? 'Éxito' : 'Error'; ?>
                 </div>
                 
                 <h2><?php echo $mensaje; ?></h2>
                 
                 <?php if ($tipo_mensaje == 'exito'): ?>
                 <div class="detalles-actualizacion">
-                    <h3>📋 Datos actualizados:</h3>
+                    <h3>Datos actualizados:</h3>
                     
                     <div class="detalle-item">
                         <strong>ID del libro:</strong> <?php echo $id; ?>
@@ -135,9 +135,9 @@ $conexion->close();
                 <?php endif; ?>
                 
                 <div class="botones-opciones">
-                    <a href="listar_libros.php" class="btn">📋 Ver todos los libros</a>
-                    <a href="editar_libro.php?id=<?php echo $id; ?>" class="btn btn-secundario">✏️ Editar de nuevo</a>
-                    <a href="index.php" class="btn btn-secundario">🏠 Volver al inicio</a>
+                    <a href="listar_libros.php" class="btn">Ver todos los libros</a>
+                    <a href="editar_libro.php?id=<?php echo $id; ?>" class="btn btn-secundario">Editar de nuevo</a>
+                    <a href="index.php" class="btn btn-secundario">Volver al inicio</a>
                 </div>
             </div>
         </main>
